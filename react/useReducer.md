@@ -38,6 +38,18 @@ const [state, dispatch] = useReducer(reducer, initialArg, init?)
 
 참고로 javascript의 `reduce` 메서드에 영향을 받아 `reducer`라는 이름이 지어지게 됐다. `reduce` 메서드는 accumulator와 current item을 받아 next result를 만들어 내는데, `reducer`도 current state와 action을 받아 new state를 만들어내는게 이와 비슷하여 명명하게 되었다.
 
+## 제네릭 타입
+
+두 가지 제네릭 타입을 받는다. 첫 번째는 init 함수의 제네릭 타입을, 두 번째는 초기값의 타입을 받는다.
+
+```typescript
+function useReducer<R extends Reducer<any, any>, I>(
+  reducer: R,
+  initializerArg: I,
+  initializer: (arg: I) => ReducerState<R>
+): [ReducerState<R>, Dispatch<ReducerAction<R>>];
+```
+
 ## 주의할 점
 
 1. reducer 함수는 함수 컴포넌트 밖에 배치한다.
