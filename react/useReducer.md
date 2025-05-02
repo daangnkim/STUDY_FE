@@ -2,7 +2,7 @@
 `reducer`는 state와 action을 넣어서 새로운 state를 반환받는다.
 `useReducer`는 reducer와 initialState를 넣어서 state와 dispatch 함수를 반환받는다.
 
-useState는 useReducer의 대안이다. useReducer는 렌더링 로직과 상태 관리 로직을 분리하고 싶을때, 상태가 복잡할 때, 여러 이벤트 핸들러에서 상태를 업데이트 하는 것이 매우 복잡할 때 유용하다. 상태 관리를 하나의 centralized 된 함수인 `reducer`에서 진행할 수 있다.
+useState는 useReducer의 대안이다. useReducer는 복잡한 상태 관리를 좀 더 구조화하고 예측 가능하게 만든다. 상태 관리를 하나의 centralized 된 함수인 `reducer`에서 진행할 수 있다.
 
 그리고 다음과 같이 사용한다.
 
@@ -37,8 +37,6 @@ const [state, dispatch] = useReducer(reducer, initialArg, init?)
    ```
 
 참고로 javascript의 `reduce` 메서드에 영향을 받아 `reducer`라는 이름이 지어지게 됐다. `reduce` 메서드는 accumulator와 current item을 받아 next result를 만들어 내는데, `reducer`도 current state와 action을 받아 new state를 만들어내는게 이와 비슷하여 명명하게 되었다.
-
-## Typescript와 함께 사용하는 방법
 
 ## 주의할 점
 
@@ -117,6 +115,8 @@ const [state, dispatch] = useReducer(reducer, initialArg, init?)
 
 9. `action`은 `user interaction`을 잘 분명하게 표현해야한다.
 
+10. dispatch의 형태는 전통적으로 `type`과 `payload`로 구성된다.
+
 ## DEBT
 
 1. 전역 상태에서 useReducer를 사용하려면?
@@ -125,4 +125,6 @@ const [state, dispatch] = useReducer(reducer, initialArg, init?)
 
 - [useThe Ultimate Guide to useReducer: Best Practices and Pitfalls | by Emrebener | Medium](https://emrebener.medium.com/the-ultimate-guide-to-usereducer-best-practices-and-pitfalls-01912c711b4f)
 
-- [usereducer with typescript - Google Search](https://www.google.com/search?q=usereducer+with+typescript&rlz=1C5CHFA_enKR1046KR1046&oq=useReducer+with+typescript&gs_lcrp=EgZjaHJvbWUqBwgAEAAYgAQyBwgAEAAYgAQyCAgBEAAYFhgeMggIAhAAGBYYHjIICAMQABgWGB4yCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yBggHEEUYPNIBCDIyMjVqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8)
+- [Using the useReducer Hook in React with TypeScript - DEV Community](https://dev.to/craigaholliday/using-the-usereducer-hook-in-react-with-typescript-27m1)
+
+- [React 18.x & TypeScript | how to safely type the useReducer hook](https://www.fabiobiondi.dev/blog/2023-01/how-to-safely-type-usereducer-in-react-and-typescript/)
