@@ -1,3 +1,3 @@
 ## 프론트엔드 야크 털 깎기
 
-![alt text](frontend.webp)
+![alt text](커버_이미지.png)
