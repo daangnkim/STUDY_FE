@@ -1,3 +1,7 @@
+## 특징
+
+fsd 아키텍쳐 구조에서 public api와 private api를 구분하기 위해 사용
+
 ## 장점
 
 import 문의 라인 수가 비교적 줄어들어 코드가 깔끔해진다
