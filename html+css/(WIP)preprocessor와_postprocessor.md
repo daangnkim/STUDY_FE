@@ -24,6 +24,10 @@ Plugin들과 함께 다음과 같은 기능들을 제공한다.
 
 4. CSS nano를 통해서 css를 압축한다.
 
+## QUESTIONS
+
+1. tailwind와 postcss의 관계는?
+
 [PostCSS Architecture](https://postcss.org/docs/postcss-architecture#core-structures)
 
 [Deconfusing Pre- and Post-processing | by Stefan Baumgartner | Medium](https://medium.com/@ddprrt/deconfusing-pre-and-post-processing-d68e3bd078a3)
