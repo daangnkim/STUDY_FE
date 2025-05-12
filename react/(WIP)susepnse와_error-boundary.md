@@ -12,9 +12,9 @@
 
 ## Unresolved Questions
 
-2. Error Boundary가 이벤트 핸들러 에러, 비동기 에러 등에 대해서는 캐치하지 못하는 이유는 무엇인지?
-3. Suspense의 구체적인 동작 원리는 무엇인지?
-4. componentDidCatch와 getDerivedStateFromError가 무엇인지?
+1. Error Boundary가 이벤트 핸들러 에러, 비동기 에러 등에 대해서는 캐치하지 못하는 이유는 무엇인지?
+2. Suspense의 구체적인 동작 원리는 무엇인지?
+3. componentDidCatch와 getDerivedStateFromError가 무엇인지?
 
 ## References
 
