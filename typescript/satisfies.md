@@ -3,7 +3,7 @@
 크게 두 가지 기능같다.
 
 1. pre-validation
-2. 객체 내 키와 값이 알맞게 작성돼있는지 (validation)
+2. 객체 내 키와 값이 알맞게 작성돼있는지 (validation)
 
 이중 pre-validation에 대한 설명은 다음과 같다.
 
