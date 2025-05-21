@@ -1,4 +1,4 @@
-## useId (18v)
+## useId (v18)
 
 accessibility 관련 속성에 전달 가능하다.
 
@@ -8,7 +8,7 @@ id를 하드코딩하는 것은 좋지 않기때문에 적합하다.
 
 [useId – React](https://react.dev/reference/react/useId)
 
-## useDeferredValue & useTransition (18v)
+## useDeferredValue & useTransition (v18)
 
 concurrent rendering에서 설명한다.
 
@@ -16,7 +16,7 @@ concurrent rendering에서 설명한다.
 
 ## useInsertionEffect
 
-## useImperativeHandle (18v)
+## useImperativeHandle (v18)
 
 리액트는 기본적으로 declarative하지만 어쩔 수 없이 imperative 해야할 때 사용한다.
 
