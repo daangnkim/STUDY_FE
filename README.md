@@ -1,4 +1,4 @@
-## 프론트엔드 야크 털 깎기
+## 프론트엔드 공부 저장소
 
 ![alt text](cover-image.png)
 
